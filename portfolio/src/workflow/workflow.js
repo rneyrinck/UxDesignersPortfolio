@@ -1,3 +1,4 @@
+import './workflow.css'
 import { useState } from "react";
 import DropDown from "../dropDown/dropDown";
 import "react-dropdown/style.css";
@@ -49,6 +50,7 @@ const WorkFlow = (props) => {
           and advocate of data-driven design.
         </p>
       </div>
+      <div className='workflow-cards'>
       <WorkFlowArticle
         img="./images/wFmvpScope.png"
         title="MVP/Scope Mapping"
@@ -87,6 +89,7 @@ const WorkFlow = (props) => {
         li2="Recommended this unique view for important data collected"
         softwareIcon={figma}
       />
+      </div>
     </section>
   );
 };

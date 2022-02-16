@@ -1,7 +1,20 @@
 import { useState } from "react";
 import DropDown from "../dropDown/dropDown";
 import "react-dropdown/style.css";
-
+import "./partySquares.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { MdOutlineExplore } from "react-icons/md";
+import {
+  Button,
+  Card,
+  Col,
+  Dropdown,
+  DropdownButton,
+  Form,
+  FormGroup,
+  FormLabel,
+  Row,
+} from "react-bootstrap";
 const PartySquares = (props) => {
   // const [partySquare, setPartySquare] = useState()
   const [value, setValue] = useState(
@@ -19,14 +32,14 @@ const PartySquares = (props) => {
     setValue("");
     //get value from state
     // add value to App state w/o manipulating previous state
-    return ;
+    return;
   };
   return (
     <section>
       <div className="page-explanation">
-        <h6>
-          <span className="icon"></span> EXPLORATION
-        </h6>
+        <div className="exploration">
+          <MdOutlineExplore className="svg_icons" /> <h6>EXPLORATION</h6>
+        </div>
         <h2>What's a party Square?</h2>
         <p>
           Party squares are an exploration into the iterative potential of
@@ -37,44 +50,71 @@ const PartySquares = (props) => {
       <div className="partysquare-container">
         <img src={value} alt="" />
       </div>
-      <div className="partySquares-form">
-        <form onSubmit={handleSubmit}>
-          <div>
-            <span className="party-icon"></span>
-            <h6>Party Squares</h6>
-          </div>
-          <label>
-            Name:
-            <input type="text" value={value} onChange={handleChange} />
-          </label>
-
-          <label>
-            Main:
-            <input type="text" value={value} onChange={handleChange} />
-          </label>
-          <label>
-            Proptein:
-            <input type="text" value={value} onChange={handleChange} />
-          </label>
-          <label>
-            Rice:
-            <input type="text" value={value} onChange={handleChange} />
-          </label>
-          <label>
-            Sauce:
-            <input type="text" value={value} onChange={handleChange} />
-          </label>
-          <label>
-            Drink:
-            <input type="text" value={value} onChange={handleChange} />
-          </label>
-          <label>
-            Cost:
-            <input type="text" value={value} onChange={handleChange} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
+    <div className="party-square-img">
+      <img src={value}></img>
+    </div>
+      <h2>Party Squares</h2>
+      <Form>
+        <Row>
+          <Col>
+            <Form.Label column sm="2">
+              Color
+            </Form.Label>
+          </Col>
+          <Col>
+            <DropdownButton
+              variant="outline-secondary"
+              title="Red"
+              id="input-group-dropdown-1"
+            >
+              <Dropdown.Item href="#">Black</Dropdown.Item>
+              <Dropdown.Item href="#">Yellow</Dropdown.Item>
+              <Dropdown.Item href="#">Peach</Dropdown.Item>
+              <Dropdown.Item href="#">Lilac</Dropdown.Item>
+              <Dropdown.Item href="#">Blue</Dropdown.Item>
+              <Dropdown.Item href="#">Red</Dropdown.Item>
+            </DropdownButton>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Form.Label column sm="2">
+              Fun
+            </Form.Label>
+          </Col>
+          <Col>
+            <Form.Check type="switch" id="custom-switch" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Form.Label column sm="2">
+              Corners
+            </Form.Label>
+          </Col>
+          <Col>
+            <DropdownButton
+              variant="outline-secondary"
+              title="Rounded"
+              id="input-group-dropdown-1"
+            >
+              <Dropdown.Item href="#">Sharp</Dropdown.Item>
+              <Dropdown.Item href="#">Yellow</Dropdown.Item>
+              <Dropdown.Item href="#">Surprise</Dropdown.Item>
+            </DropdownButton>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Form.Label column sm="2">
+              Solid
+            </Form.Label>
+          </Col>
+          <Col>
+            <Form.Check type="switch" id="custom-switch" />
+          </Col>
+        </Row>
+      </Form>
     </section>
   );
 };

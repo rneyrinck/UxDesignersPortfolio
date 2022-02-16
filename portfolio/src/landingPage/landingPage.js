@@ -1,20 +1,26 @@
 import { Link } from "react-router-dom";
 import PartySquares from "../partySquares/partySquares";
-
+import { Button } from "react-bootstrap";
+import './landPage.css'
+import Image from 'react-bootstrap/Image'
 const LandingPage = () => {
   return (
     <section>
+      <div className="center-card">
       <h3>UX/UI DESIGN</h3>
-      <h1>Portfolio</h1>
+      <h2>Portfolio</h2>
       <div className="icon-hero">
-        <div className="headshot-img"></div>
-        <h2>Mary Jorgenson</h2>
+        <img ></img>
+        <div className='hero-text'>
+        <h1>Mary Jorgenson</h1>
         <h4>Product Designer</h4>
+        </div>
+      </div>
       </div>
       <Link to="partysquares" element={<PartySquares />}>
         <div>
           <span className="party-icon"></span>
-          <h6>Party Squares</h6>
+          <Button>Party Squares</Button>
         </div>
       </Link>
     </section>

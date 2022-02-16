@@ -1,10 +1,19 @@
+// import { BsLinkedin,BsBookmarkXFill,BsBookmarkPlus,BsDownload,BsShare  } from "react-icons/bs";
+import { SiNotion, SiLinkedin } from "react-icons/si";
+import "./footer.css";
 const Footer = () => {
-    return(
-        <footer>
-            <a href=""><img src="sdfsf"></img></a>
-            <a href=""><img src="portfolio/src/images/cib_notion.png"></img></a>
-            <p>mary.r.jorgenson@gmail.com -{">"}</p>
-        </footer>
-    )
-}
-export default Footer
+  return (
+    <footer>
+      <div className="socials">
+        <a>
+          <SiLinkedin className="svg_icons" />
+        </a>
+        <a>
+          <SiNotion className="svg_icons" />
+        </a>
+      </div>
+      <a href="">mary.r.jorgenson@gmail.com -{">"}</a>
+    </footer>
+  );
+};
+export default Footer;
