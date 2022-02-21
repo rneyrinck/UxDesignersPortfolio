@@ -1,0 +1,75 @@
+.page-explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+
+  position: static;
+  /* width: 375px; */
+  height: 221px;
+  left: 0px;
+  top: 100px;
+  background: #2e4e3c;
+  align-self: stretch;
+}
+.page-explanation h6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 112px;
+  height: 16px;
+  left: 20px;
+  top: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.058em;
+  font-variant: small-caps;
+  /* padding: 10px; */
+  color: #dce8dd;
+}
+.exploration {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: baseline;
+}
+.page-explanation .svg_icons {
+  transform: scale(1.4);
+  color: #98e9a1;
+}
+.page-explanation h2 {
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+
+  color: #cff4d2;
+}
+.page-explanation p {
+  text-align: left;
+  position: static;
+  /* width: 335px; */
+  height: 92px;
+  left: 20px;
+  top: 109px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  /* or 164% */
+
+  letter-spacing: -0.012em;
+
+  color: #e2efe3;
+}

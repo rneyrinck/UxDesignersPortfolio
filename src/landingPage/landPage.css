@@ -1,0 +1,102 @@
+.icon-hero {
+  background-color: #e8e8e8;
+  width: 215px;
+  height: 63px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+.icon-hero h1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: -0.012em;
+
+  color: #333333;
+}
+.icon-hero h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: -0.012em;
+
+  color: #7e7e7e;
+}
+.icon-hero img {
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  flex: none;
+  flex-grow: 0;
+  margin: 0px 14px;
+}
+.center-card h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 73px;
+  /* identical to box height */
+    
+  letter-spacing: -0.012em;
+
+  color: #000000;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 716px;
+}
+.center-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  align-self: center;
+  
+  width: 263px;
+  /* height: 249px; */
+  border-radius: 4px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 134px;
+  height: 43px;
+  left: 65px;
+  top: 10px;
+}
+.center-card h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: 0.058em;
+  font-variant: small-caps;
+
+  color: #414141;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 36px 0px;
+}

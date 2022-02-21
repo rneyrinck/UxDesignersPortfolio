@@ -1,0 +1,24 @@
+footer{
+    height: 230px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin-bottom: 50px;
+}
+.svg_icons{
+    transform: scale(2.8);
+    color: #171328;
+
+}
+a{
+    text-decoration: none;
+    color: #171328;
+}
